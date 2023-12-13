@@ -32,7 +32,7 @@ sequelize.sync()
   .then(() => {
     console.log('Database synchronized.');
     // Start the server after the database syncs successfully
-    app.listen(3306 || process.env.PORT , () => {
+    app.listen(2500 || process.env.PORT , () => {
       console.log('Server is running on port 2500');
     });    
   })

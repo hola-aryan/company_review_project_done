@@ -1,13 +1,11 @@
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize('node-complete', 'root','Aryan@123', {dialect:'mysql',
- host:'::1'});
-// const sequelize = new Sequelize('node-complete', 'root','Aryan@123', {dialect:'mysql',
-//  host:'localhost'});
+ host:'localhost'});
 
 module.exports = sequelize;
 
-// Command CS
+// Sequelize Command CS
 
 // To update
 // Model.update(
@@ -19,7 +17,8 @@ module.exports = sequelize;
 //     console.error('Error updating record:', error);
 //   });
 
-//   TO Delete
+
+//   To Delete
 // Model.destroy({
 //   where: { id: 1 } // specify the condition
 // }).then(result => {
@@ -27,6 +26,7 @@ module.exports = sequelize;
 // }).catch(error => {
 //   console.error('Error deleting record:', error);
 // });
+
 
 // To add some data
 // Model.create({
@@ -39,6 +39,7 @@ module.exports = sequelize;
 //   console.error('Error creating record:', error);
 // });
 
+
 // To Retrieve Data
 // Model.findAll().then(records => {
 //     console.log('All records:', records);
@@ -46,8 +47,8 @@ module.exports = sequelize;
 //     console.error('Error retrieving records:', error);
 //   });
 
-// To find by id
 
+// To find by id
 // Model.findByPk(recordId)
 //   .then(record => {
 //     if (record) {
@@ -59,5 +60,3 @@ module.exports = sequelize;
 //   .catch(error => {
 //     console.error('Error finding record by ID:', error);
 //   });
-
-  
